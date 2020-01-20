@@ -7,8 +7,41 @@ Key (16 bytes) - IV (16 bytes) - Encrypted Message
 
 ## Python
 ### Prerequisites
+Install python3 and pip:
+```
+sudo apt install python3 python3-pip
+```
+Install PyCryptodome 
+```
+pip3 install pycryptodome
+```
 ### Usage
-
+Execute:
+```
+python3 decrypt.py encrypted.bin decrypted.dec
+```
 ## C
 ### Prerequisites
+Install gcc:
+```
+sudo apt install gcc
+```
+Install OpenSSL library
+```
+sudo apt install libssl–dev
+```
 ### Usage
+Compile:
+```
+gcc -o decrypt decrypt.c -lcrypto
+```
+Execute:
+```
+./decrypt encrypted.bin decrypted.dec
+```
+
+## Authors
+* **[x1n5h3n](https://github.com/x1n5h3n)**
+
+## License
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
