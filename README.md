@@ -3,7 +3,7 @@ Implementation in Python 3 and C for CBC ciphertext stealing decryption using a 
 
 ## File structure
 To decrypt a file encrypted in CTS Mode, the struct of the encrypted file should be like this:
-Key (16 bytes) - IV (16 bytes) - Encrypted Message
+MD5 Key (16 bytes) - IV (16 bytes) - Encrypted Message
 
 ## Python
 ### Prerequisites
@@ -39,6 +39,10 @@ Execute:
 ```
 ./decrypt encrypted.bin decrypted.dec
 ```
+
+## Test
+- Encrypt lenna.png with CIPHERME.exe
+- Use decrypt.py or decrypt.c to decrypt the encrypted file
 
 ## Authors
 * **[x1n5h3n](https://github.com/x1n5h3n)**
