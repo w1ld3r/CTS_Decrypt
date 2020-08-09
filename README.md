@@ -44,8 +44,5 @@ Execute:
 - Encrypt lenna.png with CIPHERME.exe
 - Use decrypt.py or decrypt.c to decrypt the encrypted file
 
-## Authors
-* **[x1n5h3n](https://github.com/x1n5h3n)**
-
 ## License
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details.
